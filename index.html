@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090b16" />
+  <meta name="description" content="ClearCut — private, quality-first video compression in your browser." />
+  <title>ClearCut — Quality First Video Compressor</title>
+</head>
+<body>
+  <div id="app">
+    <header class="topbar"><a class="brand" href="#"><span class="brand-mark">C</span><span>clearcut<span class="brand-dot">.</span></span></a><span class="privacy-pill"><i></i> Files stay on your device</span></header>
+    <main>
+      <section class="hero"><div class="eyebrow">SMART VIDEO COMPRESSION</div><h1>Smaller files.<br><span>Beautiful details.</span></h1><p class="hero-copy">Compress videos with a quality-first balance. Your files are processed locally in your browser — never uploaded to a server.</p></section>
+      <section class="workspace">
+        <div class="panel">
+          <div class="panel-heading"><div><div class="step-label">STEP 01</div><h2>Choose your video</h2></div><span class="format-tag">MP4 · MOV · WEBM · MKV</span></div>
+          <label class="dropzone" id="dropzone" for="fileInput"><input id="fileInput" type="file" accept="video/*,.mkv,.mov,.avi,.webm"/><span class="upload-icon">↑</span><strong>Drop your video here</strong><span class="muted">or <span class="browse">browse files</span></span><small>For best results, start with a short video to test your browser.</small></label>
+          <div id="fileInfo" class="file-info hidden"></div>
+          <div class="settings-row"><div><div class="step-label">STEP 02</div><h2>Compression settings</h2></div><span class="balanced-badge">✦ BALANCED MODE</span></div>
+          <div class="setting-card"><div><strong>Quality and speed</strong><p>High visual quality with faster processing.</p></div><div class="setting-value">Balanced</div></div>
+          <div class="setting-card"><div><strong>Resolution</strong><p>Keep the original video resolution.</p></div><div class="setting-value">Original</div></div>
+          <div class="setting-card"><div><strong>Audio</strong><p>Keep clear audio with high-quality AAC.</p></div><div class="setting-value">192 kbps</div></div>
+          <button id="compressBtn" class="primary-btn" disabled>Choose a video to begin <span>→</span></button>
+          <div id="status" class="status" aria-live="polite">Ready when you are.</div>
+          <div class="progress-wrap hidden" id="progressWrap"><div class="progress-track"><div id="progressBar"></div></div><div id="progressText">Preparing…</div></div>
+          <div id="result" class="result hidden"></div>
+        </div>
+        <aside class="side-note"><div class="shield">✧</div><h3>Quality comes first.</h3><p>ClearCut uses a balanced compression setting. It aims to reduce file size without changing your video's dimensions.</p><div class="note-line"></div><h4>Good to know</h4><ul><li>Processing happens on your device.</li><li>Large videos can take time and use significant memory.</li><li>Compression results depend on the original video.</li></ul></aside>
+      </section>
+      <footer> CLEARCUT <span>·</span> PRIVATE BY DESIGN <span>·</span> QUALITY FIRST</footer>
+    </main>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
