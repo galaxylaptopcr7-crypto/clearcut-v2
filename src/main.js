@@ -32,7 +32,7 @@ async function loadEngine() {
         $('progressText').textContent = `Processing… ${pct}% (estimate)`;
       }
     });
-    const base = 'https://cdn.jsdelivr.net/npm/@ffmpeg/core@0.12.10/dist/umd';
+    const base = 'https://cdn.jsdelivr.net/npm/@ffmpeg/core@0.12.10/dist/esm';
     await engine.load({
       coreURL: await toBlobURL(`${base}/ffmpeg-core.js`, 'text/javascript'),
       wasmURL: await toBlobURL(`${base}/ffmpeg-core.wasm`, 'application/wasm')
