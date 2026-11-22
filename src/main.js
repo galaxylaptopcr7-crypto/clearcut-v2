@@ -88,7 +88,7 @@ $('compressBtn').addEventListener('click', async () => {
     const exitCode = await engine.exec([
       '-i', inputName,
       '-map', '0:v:0', '-map', '0:a?',
-      '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '23',
+      '-c:v', 'libx264', '-preset', 'ultrafast', '-crf', '23',
       '-pix_fmt', 'yuv420p',
       '-c:a', 'aac', '-b:a', '192k',
       '-movflags', '+faststart',
